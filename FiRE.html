@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="fireCSS.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireDev</title>
+
+</head>
+<body>
+    <input type="text" id="name" placeholder="Enter Name">
+    <button id="ip" onclick="addName()">Submit</button>
+    <button id="ip" onclick="refresh()">Refresh</button>
+    <h2><span>FiRE <span id="D">DEV😉</span></span></h2>
+
+    <script>
+        let name = document.getElementById("name");
+        var output = document.getElementById('D');
+    
+        function addName()
+        {
+            D.innerHTML = name.value.toUpperCase()+"❤️";
+            // clearTimeout(myTimeout);
+        }
+        function refresh()
+        {
+            name.value = "";
+        }
+    </script>
+</body>
+
+</html>
